@@ -1,0 +1,5 @@
+# Compiled files
+\.hi
+\.o
+\.pyc
+__pycache__
