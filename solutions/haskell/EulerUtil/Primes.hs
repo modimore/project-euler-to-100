@@ -1,4 +1,7 @@
-module EulerUtil.Primes (primesTo) where
+module EulerUtil.Primes (
+    primesTo
+) where
+
 -- Generate primes up to m
 primesTo :: Int -> [Int]
 primesTo m

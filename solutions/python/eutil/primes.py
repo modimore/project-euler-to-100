@@ -66,6 +66,9 @@ class PrimesIterator(object):
         index = self._index
         self._index += 1
         return self._primes[index]
+    
+    # for Python 2.X
+    next = __next__
 
 def primes_below(n):
     it = iter(_global_prime_cache)
