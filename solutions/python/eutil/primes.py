@@ -12,7 +12,6 @@ class PrimeCache(object):
     def __getitem__(self, index):
         while len(self._primes) <= index:
             self._find_next_prime()
-
         return self._primes[index]
     
     def __contains__(self, value):
@@ -40,15 +39,15 @@ class PrimeCache(object):
        self._primes.append(current)
        self._primes_set.add(current)
     
-    #def _find_more_primes(self):
+    #def _find_primes(self):
     #    p = self._primes[-1]
     #    candidates = set(range(p, p**2, 2))
     #    for p in self._primes[1:]:
     #        marked = set()
     #        for c in candidates:
-    #            if c % p != 0: marked.add(c)
+    #            if c % p == 0: marked.add(c)
     #        candidates -= marked
-    #
+    #    
     #    self._primes.extend(sorted(candidates))
     #    self._primes_set |= candidates
 
@@ -82,16 +81,15 @@ primes = _global_prime_cache
 # This function works very quickly.
 # If you know what your limit is it's the best solution I've
 # seen, but I don't know how to cache it quite yet.
-#
-# def find_primes(n):
-#     p = 2
-#     primes = set(range(2, n))
-#     last = n
-#     while last > len(primes):
-#         last = len(primes)
-#         primes -= set(range(p*2, n, p))
-#         p += 1
-#         while not p in primes:
-#             p += 1
-#     
-#     return primes
+def get_primes_fast(n):
+    p = 3
+    primes = {2} | set(range(3, n, 2))
+    last = n
+    while last > len(primes):
+        last = len(primes)
+        primes -= set(range(p*2, 2*n, p))
+        p += 2
+        while not p in primes:
+            p += 2
+    
+    return primes
