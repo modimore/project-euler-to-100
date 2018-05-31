@@ -19,6 +19,7 @@ class PentagonNumberCache:
         #return n in self._pentagon_numbers
     
     def __getitem__(self, i):
+        #return pentagon_number(i+1)
         while len(self._pentagon_numbers) <= i:
             self._find_next()
         return self._pentagon_numbers[i]
@@ -34,7 +35,7 @@ if __name__ == "__main__":
     except:
         from sys import maxint
         inf = maxint
-    pair = (None, None, inf)
+    best = (None, None, inf)
     found = False
     k = 1
     while not found:
@@ -43,15 +44,12 @@ if __name__ == "__main__":
         while 0 <= j:
             P_j = pentagon_numbers[j]
             S, D = P_k + P_j, P_k - P_j
-            if D > pair[2]:
+            if D > best[2]:
                 break
             if D in pentagon_numbers and S in pentagon_numbers:
-                pair = min(pair, (k, j, D), key=lambda p: p[2])
-                found = True
-                break
+                best = min((j, k, D), best, key=lambda d: d[2])
             j -= 1
-        if found: break
-        if 3 * k + 1 > pair[2]:
-            break
+        if 3 * k + 1 > best[2]:
+            found = True
         k += 1
-    print("Minimum difference:", pair[2])
+    print("Minimum difference:", best[2])
