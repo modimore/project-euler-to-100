@@ -1,24 +1,4 @@
-def triangle_number(n):
-    return n * (n+1) // 2
-
-class TriangleNumberCache:
-    def __init__(self):
-        self._triangle_numbers = [triangle_number(1)]
-    
-    def __contains__(self, n):
-        while self._triangle_numbers[-1] < n:
-            self._find_next()
-        return n in self._triangle_numbers
-    
-    def __getitem__(self, i):
-        while len(self._triangle_numbers) <= i:
-            self._find_next()
-        return self._triangle_numbers[i]
-    
-    def _find_next(self):
-        self._triangle_numbers.append(triangle_number(len(self._triangle_numbers)+1))
-
-triangle_numbers = TriangleNumberCache()
+from eutil.numbers import triangle_numbers
 
 _ord_a = ord('a')
 _all_letters = set("abcdefghijklmnopqrstuvwxyz")
