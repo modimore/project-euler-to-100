@@ -11,16 +11,19 @@ class PrimeCache(object):
 
     def __getitem__(self, index):
         while len(self._primes) <= index:
-            self._find_next_prime()
+            self._extend_sequence()
         return self._primes[index]
     
     def __contains__(self, value):
         while self._primes[-1] < value:
-            self._find_next_prime()
+            self._extend_sequence()
         return value in self._primes_set
 
     def __iter__(self):
         return PrimesIterator(primes=self)
+    
+    def _extend_sequence(self):
+        self._find_next_prime()
     
     def _find_next_prime(self):
        current = self._primes[-1]
@@ -39,17 +42,15 @@ class PrimeCache(object):
        self._primes.append(current)
        self._primes_set.add(current)
     
-    #def _find_primes(self):
-    #    p = self._primes[-1]
-    #    candidates = set(range(p, p**2, 2))
-    #    for p in self._primes[1:]:
-    #        marked = set()
-    #        for c in candidates:
-    #            if c % p == 0: marked.add(c)
-    #        candidates -= marked
-    #    
-    #    self._primes.extend(sorted(candidates))
-    #    self._primes_set |= candidates
+    def _find_primes(self):
+        p = self._primes[-1]
+        limit = p**2
+        candidates = set(range(p, limit, 2))
+        for p in self._primes[1:]:
+            candidates -= set(range(p, limit, p))
+        
+        self._primes.extend(sorted(candidates))
+        self._primes_set |= candidates
 
 _global_prime_cache = PrimeCache()
 
