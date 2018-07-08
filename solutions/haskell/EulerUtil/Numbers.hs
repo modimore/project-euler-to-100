@@ -11,8 +11,9 @@ digitList n
     | n < 10 = n:[]
     | otherwise = digitList (div n 10) ++ [mod n 10]
 
-factorial :: Int -> Int
+factorial :: Integral a => a -> a
 factorial 0 = 1
 factorial n = n * factorial (n-1)
 
 fact_memo n = (map factorial [0..]) !! n
+fact = fact_memo

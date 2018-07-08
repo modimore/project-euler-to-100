@@ -1,4 +1,5 @@
 # Compiled files
+\.exe
 \.hi
 \.o
 \.pyc
