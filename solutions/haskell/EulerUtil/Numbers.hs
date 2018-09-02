@@ -6,7 +6,7 @@ module EulerUtil.Numbers (
 
 -- Return a list of the digits in a (non-negative) integer
 -- digitList :: Integral a => a -> [a]
-digitList :: Int -> [Int]
+digitList :: Integral a => a -> [a]
 digitList n
     | n < 10 = n:[]
     | otherwise = digitList (div n 10) ++ [mod n 10]
