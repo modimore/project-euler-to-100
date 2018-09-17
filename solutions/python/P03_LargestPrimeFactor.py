@@ -15,7 +15,7 @@ def max_prime_factor_slow(n):
 # but that's unavoidable.
 def max_prime_factor(n):
     best_prime = None
-    for p in primes_below(n+1):
+    for p in primes:
         if n < p:
             break
         while n % p == 0:

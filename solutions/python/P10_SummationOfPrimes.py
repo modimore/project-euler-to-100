@@ -1,4 +1,4 @@
-from eutil.primes import primes
+from eutil.primes import primes_below
 from sys import argv
 
 N = 2000000
@@ -11,12 +11,6 @@ if len(argv) > 1:
 
 print("Summing all primes less than {}...".format(N))
 
-prime_iterator = iter(primes)
-prime_sum = 0
-
-p = next(prime_iterator)
-while p < N:
-    prime_sum += p
-    p = next(prime_iterator)
+prime_sum = sum(primes_below(N))
 
 print(prime_sum)

@@ -4,7 +4,6 @@ from eutil.primes import primes
 def find_goldbach_disprover():
     n = 1
     found = False
-    x = None
     while not found:
         n += 2
         if n in primes:
