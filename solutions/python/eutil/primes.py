@@ -1,10 +1,10 @@
 """Prime number utility module for Project Euler"""
+from math import sqrt
 
 class PrimeCache(object):
     def __init__(self):
         self._primes = [2,3]
         self._primes_set = set(self._primes)
-        self._max_seen = 3
 
     def __getitem__(self, index):
         while len(self._primes) <= index:
@@ -12,10 +12,17 @@ class PrimeCache(object):
         return self._primes[index]
     
     def __contains__(self, value):
-        if self._primes[-1] < value and self._max_seen < value:
-            self._max_seen = value
-            self._find_primes_to(value+1)
-        return value in self._primes_set
+        if value <= 1:
+            return False
+        sqrt_v = int(sqrt(value))
+        if self._primes[-1] < sqrt_v:
+            self._find_primes_to(sqrt_v + 1)
+        for p in self._primes:
+            if p > sqrt_v:
+                break
+            if value % p == 0:
+                return False
+        return True
 
     def __iter__(self):
         return PrimesIterator(primes=self)
