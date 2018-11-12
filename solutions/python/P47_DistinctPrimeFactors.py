@@ -11,22 +11,18 @@ def factor_(n):
     return factors
 
 def factor(n):
-    factors = set()
+    if n == 1:
+        return { 1 }
+    if n in primes:
+        return { n }
+    
     primes_iter = iter(primes)
-    p = next(primes_iter)
     while n > 1:
-        if p > n:
-            break
-        elif p == n:
-            factors.add(p)
-            break
-        elif n % p == 0:
-            factors.add(p)
-            n //= p
+        p = next(primes_iter)
+        if n % p == 0:
             while n % p == 0:
                 n //= p
-        p = next(primes_iter)
-    return factors
+            return { p } | factor(n)
 
 def compose_from_prime_factors(num_factors, limit=None):
     if num_factors == 0:

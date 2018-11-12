@@ -15,6 +15,7 @@ if __name__ == "__main__":
         for i in range(len(s_n)):
             if int(s_n) not in primes:
                 is_circ_prime = False
+                break
             s_n = s_n[1:] + s_n[:1]
         if is_circ_prime:
             circ_primes_count += 1

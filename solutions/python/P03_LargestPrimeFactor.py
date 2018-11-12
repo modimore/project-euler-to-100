@@ -9,6 +9,7 @@ def max_prime_factor_slow(n):
     for p in primes_below(n):
         if n % p == 0:
             best_prime = p
+    return best_prime
 
 # This one can be very fast.
 # Any large prime will be a case where it is not,
