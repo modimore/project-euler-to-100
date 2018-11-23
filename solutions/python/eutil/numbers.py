@@ -55,6 +55,20 @@ class TriangleNumberCache(NaturalSequenceCache):
     def __contains__(self, n):
         return is_triangle_number(n)
 
+def square_number(n):
+    return n*n
+
+def is_square_number(m):
+    n = sqrt(m)
+    return n == int(n)
+
+class SquareNumberCache(NaturalSequenceCache):
+    def __init__(self):
+        super().__init__(square_number)
+    
+    def __contains__(self, n):
+        return is_square_number(n)
+
 def pentagon_number(n):
     return n * (3*n-1) // 2
 
@@ -82,6 +96,20 @@ class HexagonNumberCache(NaturalSequenceCache):
     
     def __contains__(self, n):
         return is_hexagon_number(n)
+
+def heptagon_number(n):
+    return n * (5*n-3) // 2
+
+def is_heptagon_number(m):
+    n = (sqrt(40*m + 9) + 3) / 10
+    return m == heptagon_number(n)
+
+def octagon_number(n):
+    return n * (3*n-2)
+
+def is_octagon_number(m):
+    n = (1 + sqrt(3*m+1)) / 3
+    return octagon_number(n) == m
 
 triangle_numbers = TriangleNumberCache()
 pentagon_numbers = PentagonNumberCache()
