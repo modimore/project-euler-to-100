@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 46: Goldbach's other conjecture
+Solved by: Quinn Mortimer (modimore)
+"""
 from math import sqrt
 from eutil.primes import primes
 

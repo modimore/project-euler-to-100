@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 51: Prime digit replacements
+Solved by: Quinn Mortimer (modimore)
+"""
 from math import log, inf
 from eutil.numbers import digit_list
 from eutil.primes import primes, primes_below

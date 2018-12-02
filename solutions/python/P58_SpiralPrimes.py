@@ -1,5 +1,7 @@
-# Project Euler Problem 58 Solution
-
+"""Project Euler Solutions
+Problem 58: Spiral primes
+Solved by: Quinn Mortimer (modimore)
+"""
 from math import ceil, exp
 from eutil.primes import primes
 

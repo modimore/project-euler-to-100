@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 63: Powerful digit counts
+Solved by: Quinn Mortimer (modimore)
+"""
 from math import log
 
 def solve(base=10):

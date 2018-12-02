@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 48: Self powers
+Solved by: Quinn Mortimer (modimore)
+"""
 def self_power_series(limit):
     return sum(i**i for i in range(1, limit+1))
 

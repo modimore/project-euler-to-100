@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 14: Longest Collatz sequence
+Solved by: Quinn Mortimer (modimore)
+"""
 def generate_collatz_sequence(n):
     if n <= 0:
         return []

@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 50: Consecutive prime sum
+Solved by: Quinn Mortimer (modimore)
+"""
 from eutil.primes import primes, primes_below, get_primes_fast
 
 limit = int(1E6)

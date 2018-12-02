@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 2: Even Fibonacci number
+Solved by: Quinn Mortimer (modimore)
+"""
 MAX = 4E6
 
 # Just for reference

@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 9: Special Pythagorean triplet
+Solved by: Quinn Mortimer (modimore)
+"""
 def find_triple(n):
     a, b, c = 0, 0, n//2
     c_min = n // 3

@@ -1,5 +1,7 @@
-# Project Euler Problem 55 Solution
-
+"""Project Euler Solutions
+Problem 55: Lychrel numbers
+Solved by: Quinn Mortimer (modimore)
+"""
 def reverse_digits(n):
     return int(str(n)[::-1])
 

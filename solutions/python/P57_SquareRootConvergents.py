@@ -1,5 +1,7 @@
-# Project Euler Problem 57 Solution
-
+"""Project Euler Solutions
+Problem 57: Square root convergents
+Solved by: Quinn Mortimer (modimore)
+"""
 from math import floor, log
 
 def log10(x):

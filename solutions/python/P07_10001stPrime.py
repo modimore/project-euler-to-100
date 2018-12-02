@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 7: 10001st prime
+Solved by: Quinn Mortimer (modimore)
+"""
 from eutil.primes import primes
 
 TARGET_INDEX = 10001

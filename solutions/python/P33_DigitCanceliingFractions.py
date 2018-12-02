@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 33: Digit cancelling fractions
+Solved by: Quinn Mortimer (modimore)
+"""
 from functools import reduce
 
 def digit_cancel(a, b):

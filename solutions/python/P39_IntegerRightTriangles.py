@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 39: Integer right triangles
+Solved by: Quinn Mortimer (modimore)
+"""
 best = (0, None)
 for p in range(4, 1000):
     num_right_triangles = 0

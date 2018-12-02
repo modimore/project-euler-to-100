@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 62: Cubic permutations
+Solved by: Quinn Mortimer (modimore)
+"""
 # from eutil.sequences import unique_permutations
 # 
 # def is_cubic(x):

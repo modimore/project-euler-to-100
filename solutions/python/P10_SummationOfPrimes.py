@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 10: Summation of primes
+Solved by: Quinn Mortimer (modimore)
+"""
 from eutil.primes import primes_below
 from sys import argv
 

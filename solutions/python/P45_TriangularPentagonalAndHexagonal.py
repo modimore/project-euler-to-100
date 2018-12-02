@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 45: Triangular, pentagonal, and hexagonal
+Solved by: Quinn Mortimer (modimore)
+"""
 from eutil.numbers import triangle_numbers, pentagon_numbers, hexagon_numbers
 
 tri_cat_nums = []

@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 8: Largest product in a series
+Solved by: Quinn Mortimer (modimore)
+"""
 seq = [int(c) for c in """
 73167176531330624919225119674426574742355349194934
 96983520312774506326239578318016984801869478851843

@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 38: Pandigital multiples
+Solved by: Quinn Mortimer (modimore)
+"""
 best = 0
 all_digits = {x for x in range(1,10)}
 for n in range(1, 9876):

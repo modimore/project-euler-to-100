@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 32: Pandigital products
+Solved by: Quinn Mortimer (modimore)
+"""
 def all_permutations(seq):
     if len(seq) < 2:
         yield seq[:]

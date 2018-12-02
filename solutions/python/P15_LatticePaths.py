@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 15: Lattice paths
+Solved by: Quinn Mortimer (modimore)
+"""
 def count_grid_routes(m, n):
     _m, _n = m+1, n+1
     grid = [[None for x in range(_m)] for y in range(_n)]

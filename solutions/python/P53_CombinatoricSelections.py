@@ -1,5 +1,7 @@
-# Project Euler Problem 53 Solution
-
+"""Project Euler Solutions
+Problem 53: Combinatoric selections
+Solved by: Quinn Mortimer (modimore)
+"""
 from eutil.factorial import factorial as fact
 
 def num_combinations(n, r):

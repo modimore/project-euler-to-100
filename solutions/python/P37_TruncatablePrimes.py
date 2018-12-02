@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 37: Truncatable primes
+Solved by: Quinn Mortimer (modimore)
+"""
 from eutil.numbers import primes
 
 # Find the first 11 truncateable primes,

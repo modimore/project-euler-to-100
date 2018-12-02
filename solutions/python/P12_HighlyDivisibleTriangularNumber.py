@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 12: Highly divisible triangular number
+Solved by: Quinn Mortimer (modimore)
+"""
 from math import sqrt
 def find_factors(n):
     factor = 1

@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 19: Counting Sundays
+Solved by: Quinn Mortimer (modimore)
+"""
 jan_1_1901 = 2
 current_day = jan_1_1901
 

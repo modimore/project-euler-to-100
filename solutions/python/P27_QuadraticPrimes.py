@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 27: Quadratic primes
+Solved by: Quinn Mortimer (modimore)
+"""
 from eutil.primes import primes, primes_below
 
 MAX_COEFF = 1000

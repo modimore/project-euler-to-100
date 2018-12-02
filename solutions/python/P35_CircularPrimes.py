@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 35: Circular primes
+Solved by: Quinn Mortimer (modimore)
+"""
 from eutil.primes import primes
 
 N = 1000000

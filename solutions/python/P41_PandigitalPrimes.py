@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 41: Pandigital prime
+Solved by: Quinn Mortimer (modimore)
+"""
 from itertools import permutations
 from eutil.primes import get_primes_fast
 

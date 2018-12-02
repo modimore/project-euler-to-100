@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 44: Pentagon numbers
+Solved by: Quinn Mortimer (modimore)
+"""
 from __future__ import print_function
 from eutil.numbers import pentagon_numbers
 

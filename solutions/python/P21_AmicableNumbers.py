@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 21: Amicable numbers
+Solved by: Quinn Mortimer (modimore)
+"""
 from math import sqrt
 from eutil.divisors import find_divisors
 N = 10000

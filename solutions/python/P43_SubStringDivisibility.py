@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 43: Sub-string divisibility
+Solved by: Quinn Mortimer (modimore)
+"""
 from eutil.numbers import primes
 
 def reconstruct_from_digits(digits):

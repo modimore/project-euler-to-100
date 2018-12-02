@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 3: Largest prime factor
+Solved by: Quinn Mortimer (modimore)
+"""
 import math
 from eutil.primes import primes, primes_below
 

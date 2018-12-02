@@ -1,5 +1,7 @@
-# Project Euler Problem 4
-
+"""Project Euler Solutions
+Problem 4: Largest palindrome product
+Solved by: Quinn Mortimer (modimore)
+"""
 # It turns out that it is not safe to assume that the maximum product is
 # the first palindromic product reached, though I have not figured out
 # what a suitable point to cut off the search is short of reaching 2 digit

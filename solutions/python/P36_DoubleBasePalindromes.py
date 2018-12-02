@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 36: Double-base palindromes
+Solved by: Quinn Mortimer (modimore)
+"""
 from eutil.numbers import digit_list
 
 N = 1000000

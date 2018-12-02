@@ -1,5 +1,7 @@
-# Project Euler Problem 56 Solution
-
+"""Project Euler Solutions
+Problem 56: Powerful digit sum
+Solved by: Quinn Mortimer (modimore)
+"""
 from eutil.numbers import digit_list
 
 def solve(A=100, B=100):

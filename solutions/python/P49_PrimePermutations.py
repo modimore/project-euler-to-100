@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 49: Prime permutations
+Solved by: Quinn Mortimer (modimore)
+"""
 from eutil.primes import primes, primes_below
 
 def problem49():

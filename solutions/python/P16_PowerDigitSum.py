@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 16: Power digit sum
+Solved by: Quinn Mortimer (modimore)
+"""
 def power_digit_sum(exp):
     n = 2 ** exp
     total = 0

@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 5: Smallest multiple
+Solved by: Quinn Mortimer (modimore)
+"""
 import math
 
 NUM = 600851475143

@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 34: Digit factorials
+Solved by: Quinn Mortimer (modimore)
+"""
 from math import ceil, log
 from eutil.factorial import factorial as fact
 

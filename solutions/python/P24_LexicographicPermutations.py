@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 24: Lexicographic permutations
+Solved by: Quinn Mortimer (modimore)
+"""
 INDEX = 1000000
 
 def lexicographic_permutations(seq):

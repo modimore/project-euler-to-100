@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 47: Distinct primes factors
+Solved by: Quinn Mortimer (modimore)
+"""
 from eutil.primes import primes
 
 def factor_(n):

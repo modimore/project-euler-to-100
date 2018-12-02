@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 30: Digit fifth powers
+Solved by: Quinn Mortimer (modimore)
+"""
 N = 5
 
 def sum_digit_powers(n, exp):

@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 23: Non-abundant sums
+Solved by: Quinn Mortimer (modimore)
+"""
 from eutil.divisors import find_divisors
 
 LIMIT = 28123

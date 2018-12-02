@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 1: Multiples of 3 and 5
+Solved by: Quinn Mortimer (modimore)
+"""
 from math import ceil
 
 N = 1000

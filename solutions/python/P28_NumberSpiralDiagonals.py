@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 28: Number spiral diagonals
+Solved by: Quinn Mortimer (modimore)
+"""
 MAX = (1001 // 2)
 i = 0
 diag_sum = 1

@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 60: Prime pair sets
+Solved by: Quinn Mortimer (modimore)
+"""
 from eutil.primes import primes, primes_below
 from math import inf
 

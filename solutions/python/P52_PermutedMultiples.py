@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 52: Permuted multiples
+Solved by: Quinn Mortimer (modimore)
+"""
 # Project Euler Problem 52 Solution
 
 def digit_counts(x):

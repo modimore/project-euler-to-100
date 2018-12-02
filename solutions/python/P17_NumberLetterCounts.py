@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 17: Number letter counts
+Solved by: Quinn Mortimer (modimore)
+"""
 number_words = {
     1: "one",
     2: "two",

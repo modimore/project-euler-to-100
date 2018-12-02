@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 25: 1000-digit Fibonacci number
+Solved by: Quinn Mortimer (modimore)
+"""
 DIGITS = 1000
 
 from math import log

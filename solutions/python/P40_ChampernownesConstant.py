@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 40: Champernowne's constant
+Solved by: Quinn Mortimer (modimore)
+"""
 MAX_POWER = 6
 target_digits = [10**n for n in range(MAX_POWER+1)]
 target_digits.append(None)

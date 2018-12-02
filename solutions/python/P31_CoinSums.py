@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 31: Coin sums
+Solved by: Quinn Mortimer (modimore)
+"""
 def make_change(amount, coins):
     if len(coins) == 0:
         return 0

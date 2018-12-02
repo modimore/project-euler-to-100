@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 42: Coded triangle numbers
+Solved by: Quinn Mortimer (modimore)
+"""
 from eutil.numbers import triangle_numbers
 
 _ord_a = ord('a')

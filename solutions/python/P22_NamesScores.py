@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 22: Names scores
+Solved by: Quinn Mortimer (modimore)
+"""
 filename = "P22_Input.txt"
 
 def name_sum(name):

@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 61: Cyclical figurate numbers
+Solved by: Quinn Mortimer (modimore)
+"""
 from eutil.numbers import triangle_number, square_number, pentagon_number,\
     hexagon_number, heptagon_number, octagon_number
 

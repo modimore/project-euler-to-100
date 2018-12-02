@@ -1,3 +1,7 @@
+"""Project Euler Solutions
+Problem 59: XOR decryption
+Solved by: Quinn Mortimer (modimore)
+"""
 ord_space = ord(b" ")
 
 def xor_encrypt(plain, key):
