@@ -2,5 +2,6 @@
 \.exe
 \.hi
 \.o
+\.obj
 \.pyc
 __pycache__
