@@ -18,4 +18,4 @@ def lexicographic_permutations(seq):
 if __name__ == "__main__":
     seq = list(range(10))
     perms = zip(range(INDEX), lexicographic_permutations(seq))
-    print("".join(str(e) for e in perms[-1][1]))
+    print("".join(str(e) for e in list(perms)[-1][1]))

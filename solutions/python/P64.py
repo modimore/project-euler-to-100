@@ -2,7 +2,8 @@
 Problem 64: Odd period square roots
 Solved by: Quinn Mortimer (modimore)
 """
-from math import floor, sqrt
+from fractions import Fraction
+from math import ceil, floor, log10, sqrt
 
 def get_next_expansion(n, subtra, numer):
     denom = (n - subtra**2) / numer
@@ -29,7 +30,7 @@ def find_periodic_sqrt(n):
             seq.append(expansion[0])
     
     return sqrt_floor, seq
-    
+
 def solve(limit=10000):
     count = 0
     for n in range(1, limit+1):

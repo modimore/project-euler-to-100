@@ -11,6 +11,21 @@ def is_square(x):
     sqrt_x = sqrt(x)
     return sqrt_x == int(sqrt_x)
 
+def solve_slow(D_max=1001):
+    x_sol, y_sol, D_sol = 1, 0, None
+    for D in filter(lambda d: not is_square(d), range(1, D_max)):
+        for y in itertools.count(1):
+            x_squared = D * y**2 + 1
+            if x_squared != int(x_squared):
+                continue
+            x_squared = int(x_squared)
+            if is_square(x_squared):
+                x = int(sqrt(x_squared))
+                if x > x_sol:
+                    x_sol, y_sol, D_sol = x, y, D
+                break
+    return D_sol
+
 def solve(D_max=1001):
     x_sol, y_sol, D_sol = 1, 0, None
     
