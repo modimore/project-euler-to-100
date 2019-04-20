@@ -3,7 +3,7 @@ Problem 34: Digit factorials
 Solved by: Quinn Mortimer (modimore)
 """
 from math import ceil, log
-from eutil.factorial import factorial as fact
+from eutil.number_theory import factorial as fact
 
 # Using the canonical definition of factorial is about 5 seconds
 # slower than this memoised version. This isn't totally unexpected,

@@ -2,7 +2,7 @@
 Problem 53: Combinatoric selections
 Solved by: Quinn Mortimer (modimore)
 """
-from eutil.factorial import factorial as fact
+from eutil.number_theory import factorial as fact
 
 def num_combinations(n, r):
     return fact(n) // (fact(r) * fact(n-r))

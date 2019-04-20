@@ -2,7 +2,7 @@
 Problem 26: Reciprocal cycles
 Solved by: Quinn Mortimer (modimore)
 """
-from eutil.divisors import gcd
+from eutil.number_theory import gcd_euclidean as gcd
 
 # This one is tricky IMO because it seems like you have to do it
 # with integers in a language that has Big Integer support. A really large
@@ -27,7 +27,7 @@ def find_longest_recurring(n):
                 break
         if found:
             return match[::-1]
-    
+
     return None
 
 best = (None, 0)
