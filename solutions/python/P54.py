@@ -2,7 +2,6 @@
 Problem 54: Poker hands
 Solved by: Quinn Mortimer (modimore)
 """
-
 # Define a value for the poker hands (in best-to-worst order)
 ROYAL_FLUSH = 9
 STRAIGHT_FLUSH = 8

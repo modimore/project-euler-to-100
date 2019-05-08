@@ -3,25 +3,9 @@ from math import gcd
 from .helpers import memoize_series
 from .primes import primes
 
-def memoize(f):
-    from functools import wraps
-    
-    cache = {}
-    
-    @wraps(f)
-    def f_memo(n):
-        try:
-            val = cache[n]
-        except KeyError:
-            val = cache[n] = f(n)
-        return val
-    
-    return f_memo
-
 def product(l):
     return reduce(lambda x, y: x * y, l, 1)
 
-@memoize
 def euler_totient(n):
     """Counts the integers less than or equal to n are relatively prime to n"""
     if n == 1:

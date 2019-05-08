@@ -1,7 +1,5 @@
 from math import sqrt
 
-from .primes import primes
-
 def digit_list(n, base=10):
     if  n < 0:
         return digit_list(-n)

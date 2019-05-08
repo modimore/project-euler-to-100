@@ -2,7 +2,7 @@
 Problem 23: Non-abundant sums
 Solved by: Quinn Mortimer (modimore)
 """
-from eutil.divisors import find_divisors
+from eutil.divisors import find_proper_divisors
 
 LIMIT = 28123
 
@@ -16,7 +16,7 @@ if __name__ == "__main__":
     
     abundant_nums = set()
     for n in range(1, LIMIT+1):
-        if sum(find_divisors(n)) > n:
+        if sum(find_proper_divisors(n)) > n:
             abundant_nums.add(n)
     
     two_added_abundants = set(range(1, LIMIT+1))

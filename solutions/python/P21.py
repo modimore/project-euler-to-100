@@ -3,26 +3,12 @@ Problem 21: Amicable numbers
 Solved by: Quinn Mortimer (modimore)
 """
 from math import sqrt
-from eutil.divisors import find_divisors
+from eutil.divisors import find_proper_divisors
 N = 10000
 
-#def find_divisors(n):
-#    if n < 2:
-#        return []
-#    
-#    divisors_n = set()
-#    for i in range(2, int(sqrt(n)) + 1):
-#        if n % i == 0:
-#            divisors_n.add(i)
-#    
-#    divisors_n = divisors_n | set(n // x for x in divisors_n)
-#    divisors_n.add(1)
-#    
-#    return sorted(divisors_n)
-
 def find_amicable_pair(n):
-    m = sum(find_divisors(n))
-    if sum(find_divisors(m)) == n:
+    m = sum(find_proper_divisors(n))
+    if sum(find_proper_divisors(m)) == n:
         return m
     else:
         return None

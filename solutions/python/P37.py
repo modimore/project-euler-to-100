@@ -2,7 +2,7 @@
 Problem 37: Truncatable primes
 Solved by: Quinn Mortimer (modimore)
 """
-from eutil.numbers import primes
+from eutil.primes import primes
 
 # Find the first 11 truncateable primes,
 # meaning that all subsequences of digits starting at

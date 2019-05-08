@@ -3,7 +3,7 @@ Problem 70: Totient Permutation
 Solved by: Quinn Mortimer (modimore)
 """
 from math import inf
-from eutil.number_theory import euler_totient as phi
+# from eutil.number_theory import euler_totient as phi
 from eutil.primes import primes_below
 
 def is_permutation(m, n):

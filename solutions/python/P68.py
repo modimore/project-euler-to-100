@@ -40,7 +40,6 @@ def solve():
                     magic = False
                     break
                 r += str(p[i+5]) + str(p[i]) + str(p[(i+1)%5])
-            print(m, r)
             if magic:
                 m = max(m, int(r))
     return m
