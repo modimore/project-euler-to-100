@@ -1,11 +1,12 @@
 from functools import reduce
 from math import gcd
-from .helpers import memoize_series
+from .helpers import memoize_series, memoize_unary
 from .primes import primes
 
 def product(l):
     return reduce(lambda x, y: x * y, l, 1)
 
+@memoize_unary
 def euler_totient(n):
     """Counts the integers less than or equal to n are relatively prime to n"""
     if n == 1:
@@ -13,18 +14,15 @@ def euler_totient(n):
     if n in primes:
         return n - 1
     
-    n0 = n
-    prime_factors = set()
-    p_iter = iter(primes)
-    p = next(p_iter)
-    while p <= n:
+    for p in primes:
         if n % p == 0:
-            prime_factors.add(p)
-            while n % p == 0:
-                n //= p
-        p = next(p_iter)
+            x, y = p, n // p
+            break
     
-    return n0 * product(p-1 for p in prime_factors) // product(prime_factors)
+    if y % x == 0:
+        return gcd(x, y) * euler_totient(y)
+    else:
+        return euler_totient(x) * euler_totient(y)
     #return sum(1 for x in range(1,n+1) if gcd(n, x) == 1)
 
 @memoize_series
