@@ -16,3 +16,16 @@ def memoize_series(f):
         return series[i]
     
     return memoized
+
+def memoize_unary(f):
+    cache = {}
+    
+    @functools.wraps(f)
+    def memoized(a):
+        if a in cache:
+            res = cache[a]
+        else:
+            res = cache[a] = f(a)
+        return res
+    
+    return memoized
