@@ -14,6 +14,8 @@ class PrimeCache(object):
     def __contains__(self, value):
         if value <= 1:
             return False
+        if value <= self._primes[-1]:
+            return value in self._primes_set
         sqrt_v = int(sqrt(value))
         if self._primes[-1] < sqrt_v:
             self._find_primes_to(sqrt_v + 1)
