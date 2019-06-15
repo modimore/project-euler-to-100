@@ -1,12 +1,14 @@
 #include <cstring>
 #include <iostream>
 #include <string>
-#include "euler_util\PrimeCache.hpp"
+#include "euler_util\primes.hpp"
+
+using primes::prime_t;
 
 unsigned int count_circular_primes(prime_t max) {
-    PrimeCache primes;
+    using primes::primes;
     unsigned int circular_prime_count = 0;
-    for (auto p = primes.begin(); *p < max; ++p) {
+    for (auto p = primes.begin(); *p < max; p++) {
         bool is_circular_prime = true;
         prime_t n = *p;
         std::string s_n = std::to_string(n);
@@ -27,6 +29,7 @@ unsigned int count_circular_primes(prime_t max) {
 
 int main(int argc, char **argv) {
     prime_t max = argc == 1 ? 1000000 : atoll(argv[1]);
-    std::cout << "Solution: " << count_circular_primes(max) << std:: endl;
+    unsigned int answer = count_circular_primes(max);
+    std::cout << "Solution: " << answer << std:: endl;
     return 0;
 }

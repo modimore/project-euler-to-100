@@ -1,10 +1,9 @@
 #include <iostream>
-#include "euler_util\PrimeCache.hpp"
+#include "euler_util\primes.hpp"
 
 unsigned long long nth_prime(unsigned int n) {
-    PrimeCache primes = PrimeCache();
-    
-    PrimeIterator p = primes.begin();
+    using primes::primes;
+    auto p = primes.begin();
     for (unsigned int i = 1; i < n; ++i) {
         ++p;
     }

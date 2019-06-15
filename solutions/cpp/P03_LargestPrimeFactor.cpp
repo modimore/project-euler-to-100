@@ -1,12 +1,11 @@
 #include <cstring>
 #include <iostream>
-#include "euler_util/PrimeCache.hpp"
+#include "euler_util/primes.hpp"
 
 unsigned long long largest_prime_factor(unsigned long long n) {
-    PrimeCache primes = PrimeCache();
-    
+    using primes::primes;
     unsigned long long best_prime;
-    for (PrimeIterator p = primes.begin(); *p <= n; ++p) {
+    for (auto p = primes.begin(); *p <= n; ++p) {
         while (n % *p == 0) {
             n = n / *p;
             best_prime = *p;

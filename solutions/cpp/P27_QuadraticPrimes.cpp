@@ -1,18 +1,18 @@
 #include <iostream>
 #include <utility>
-#include "euler_util\PrimeCache.hpp"
+#include "euler_util\primes.hpp"
 
 std::pair<long long, unsigned int> find_best_pair(unsigned int max_coeff) {
-    PrimeCache primes;
+    using primes::primes;
     std::pair<int, unsigned int> best(0, 0);
     unsigned int longest_run = 0;
-    for (PrimeIterator p = primes.begin(); *p < max_coeff+1; ++p) {
+    for (auto p = primes.begin(); *p < max_coeff+1; ++p) {
         unsigned int b = *p;
         for (int a = - (int)max_coeff + 1; a < (int) max_coeff; ++a) {
             long long n = 0;
-            long long f_n = n*n + a*n + b;
+            long long f_n = b;
             while (primes.contains(f_n)) {
-                n += 1;
+                ++n;
                 f_n = n*n + a*n + b;
             }
             if (n > longest_run) {

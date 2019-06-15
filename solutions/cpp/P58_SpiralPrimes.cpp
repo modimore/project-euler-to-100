@@ -1,9 +1,9 @@
 #include <cstdlib>
 #include <iostream>
-#include "euler_util\PrimeCache.hpp"
+#include "euler_util\primes.hpp"
 
 unsigned int problem_58(double ratio_limit) {
-    PrimeCache primes;
+    using primes::primes;
     unsigned long long value = 1;
     unsigned int step = 0;
     double ratio = 1.0;
