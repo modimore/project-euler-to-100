@@ -1,6 +1,5 @@
 from math import sqrt
 
-from .factorial import factorial
 from .primes import primes
 
 def digit_list(n, base=10):

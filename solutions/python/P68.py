@@ -13,7 +13,7 @@ def n_gon_rings(n=5):
         if len(sums) == 1:
             yield seq
 
-def solve():
+def solve_simple():
     m = 0
     for r in n_gon_rings(5):
         # Each ring should start with the line beginning with the lowest
@@ -25,6 +25,24 @@ def solve():
         rs = "".join("".join(str(t) for t in s) for s in r)
         if len(rs) == 16:
             m = max(m, int(rs))
+    return m
+
+def solve():
+    m = 0
+    for p1 in permutations(range(1,6)):
+        for p2 in permutations(range(7,11)):
+            p = list(p1) + [6] + list(p2)
+            r = ""
+            magic = True
+            s = p[5] + p[0] + p[1]
+            for i in range(5):
+                if p[i+5] + p[i] + p[(i+1)%5] != s:
+                    magic = False
+                    break
+                r += str(p[i+5]) + str(p[i]) + str(p[(i+1)%5])
+            print(m, r)
+            if magic:
+                m = max(m, int(r))
     return m
 
 if __name__ == "__main__":

@@ -5,9 +5,9 @@ from math import floor, sqrt
 #     c0 = floor(x)
 #     if c0 == x:
 #         return [c0]
-#     
+#
 #     eps_precision = -ceil(log10(epsilon))
-#     
+#
 #     cfs, f = [c0], round(x - c0, eps_precision)
 #     print(f, cfs)
 #     while epsilon <= abs(f):
@@ -16,7 +16,7 @@ from math import floor, sqrt
 #         f = round(f_inv - cf_n, eps_precision)
 #         cfs.append(cf_n)
 #         print(f, cfs)
-#     
+#
 #     return cfs
 
 def continued_fraction(x, epsilon=1e-6):

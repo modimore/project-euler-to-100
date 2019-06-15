@@ -1,6 +1,20 @@
 """Helper module for these utilities which are not strictly math-focused."""
 import functools
 
+def memoize_sequence(f):
+    """Memoization helper designed for a function that generates a sequence.
+    
+    The function should take a non-negative integer as an argument
+    and return the item of the series at that conceptual index.
+    """
+    sequence = []
+    
+    @functools.wraps(f)
+    def memoized(i):
+        return f(i)
+    
+    return memoized
+
 def memoize_series(f):
     """Memoization helper designed for a function that generates a series.
     

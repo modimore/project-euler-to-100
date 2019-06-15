@@ -2,7 +2,6 @@
 Problem 67: Maximum Path Sum II
 Solved by: Quinn Mortimer (modimore)
 """
-
 infile_name = "P67_Input.txt"
 
 def read_triangle(fname):
