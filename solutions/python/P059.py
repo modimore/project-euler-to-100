@@ -20,7 +20,7 @@ def sort_by_freq(b):
     by_freq = list(sorted(((c, f) for c, f in freq.items()), key=lambda p: p[1], reverse=True))
     return bytes([p[0] for p in by_freq])
 
-def solve(filename="P59_Data.bin", key_length=3):
+def solve(filename="P059_Data.bin", key_length=3):
     b = read_input(filename)
     
     key = bytearray(key_length)

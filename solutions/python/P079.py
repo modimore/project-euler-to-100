@@ -43,7 +43,7 @@ def helper(codes):
                     return password
         repeat += 1
     
-def solve(filename="P79_Input.txt"):
+def solve(filename="P079_Input.txt"):
     codes = []
     with open(filename, "r") as f:
         codes = [line.strip() for line in f]

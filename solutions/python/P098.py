@@ -39,7 +39,7 @@ def ana(words):
             best = max(best, score(w1, w2))
     return best
 
-def solve(filename="P98_Input.txt"):
+def solve(filename="P098_Input.txt"):
     with open(filename) as f:
         words = list(line.strip() for line in f)
     return ana(words)

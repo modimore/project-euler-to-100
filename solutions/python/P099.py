@@ -17,7 +17,7 @@ def largest_exponential(pairs):
             largest_idx = index
     return largest_b, largest_e, largest_idx
 
-def solve(filename="P99_Input.txt"):
+def solve(filename="P099_Input.txt"):
     pairs = []
     with open(filename, "r") as f:
         for line in f:

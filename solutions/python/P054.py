@@ -125,7 +125,7 @@ class PokerHand:
     def __ge__(self, other):
         return self > other or self == other
 
-def solve(filename="P54_Input.txt"):
+def solve(filename="P054_Input.txt"):
     p1_wins = 0
     with open(filename, "r") as hands_file:
         for row in hands_file:

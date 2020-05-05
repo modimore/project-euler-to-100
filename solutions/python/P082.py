@@ -21,7 +21,7 @@ def minimum_path_sum_3ways(grid):
             sum_grid[j1][i] = min(dists)
     return min(sum_grid[j][-1] for j in range(0, h))
 
-def solve(fname="P81_Input.txt"):
+def solve(fname="P081_Input.txt"):
     grid = []
     with open(fname, "r") as f:
         for line in f:

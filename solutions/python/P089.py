@@ -40,7 +40,7 @@ def write_rn(val):
             current = avail.pop()
     return s
 
-def solve(filename="P89_Input.txt"):
+def solve(filename="P089_Input.txt"):
     char_saved = 0
     for line in open(filename, "r"):
         rn_in = line.strip()

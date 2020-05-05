@@ -2,7 +2,7 @@
 Problem 18: Maximum path sum I
 Solved by: Quinn Mortimer (modimore)
 """
-infile_name = "P18_Input.txt"
+infile_name = "P018_Input.txt"
 
 def read_triangle(fname):
     rows = []

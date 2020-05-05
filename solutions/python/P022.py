@@ -2,7 +2,7 @@
 Problem 22: Names scores
 Solved by: Quinn Mortimer (modimore)
 """
-filename = "P22_Input.txt"
+filename = "P022_Input.txt"
 
 def name_sum(name):
     name_sum = 0

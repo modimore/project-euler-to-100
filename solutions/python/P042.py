@@ -19,7 +19,7 @@ def is_triangle_word(w):
     return word_value in triangle_numbers
 
 if __name__ == "__main__":
-    with open("P42_Input.txt") as f:
+    with open("P042_Input.txt") as f:
         count_triangle_words = 0
         for w in f.read().split(","):
             if is_triangle_word(w):

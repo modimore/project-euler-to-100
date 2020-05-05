@@ -161,7 +161,7 @@ class SudokuBoard:
 
 if __name__ == "__main__":
     boards = []
-    with open("P96_Input.txt") as f:
+    with open("P096_Input.txt") as f:
         l = f.readline()
         while l != "":
             data = [map(int, f.readline().strip())
@@ -178,4 +178,3 @@ if __name__ == "__main__":
         vals = board.data[0][0:3]
         result += vals[0] * 100 + vals[1] * 10 + vals[2]
     print("Solution:", result)
-

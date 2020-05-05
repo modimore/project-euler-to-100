@@ -17,7 +17,7 @@ def minimum_path_sum(grid):
                 min(sum_grid[j-1][i], sum_grid[j][i-1])
     return sum_grid[-1][-1]
 
-def solve(fname="P81_Input.txt"):
+def solve(fname="P081_Input.txt"):
     grid = []
     with open(fname, "r") as f:
         for line in f:

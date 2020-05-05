@@ -31,7 +31,7 @@ def minimum_path_sum_4ways(grid):
     
     return visited[(w-1, h-1)]
 
-def solve(fname="P81_Input.txt"):
+def solve(fname="P081_Input.txt"):
     grid = []
     with open(fname, "r") as f:
         for line in f:
